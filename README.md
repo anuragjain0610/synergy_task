@@ -28,6 +28,7 @@ I have taken the total number of **frames_processed_so_far** times the **so_far_
 
 
 # Output of the task
+- This is the output of what I understands after reading the given problem statement and applying the required approach to achieve it.
 <img src='output.jpg'>
 
 ## Result: As required,a clear road without any vehicle.
