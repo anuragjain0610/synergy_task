@@ -19,7 +19,7 @@ def frame_averaging(input_video_file, output_filename):
             break
 
         # Splititng the current frame into respective channels and converting them to float
-        (B, G, R) = cv2.split(frame.astype("float"))
+        B, G, R = cv2.split(frame.astype("float"))
 
         # if the frame averages are None, initialize them
         if R_Avg is None or B_Avg is None or G_Avg is None:
