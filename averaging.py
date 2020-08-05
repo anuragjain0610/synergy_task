@@ -2,11 +2,12 @@
 import cv2
 
 # create a capture object(file pointer) by loading the given video 
+# video file downloaded from [https://drive.google.com/file/d/1il2yWyr7-t9XfG1nDVL7QlfmnmNDf_9I/view?usp=sharing]
 cap = cv2.VideoCapture('cut.mp4')
 
 # initializing the initial values to Average of RGB Channel variables 
 # and no. of frames processed variable 
-(R_Avg, G_Avg, B_Avg) = (None, None, None)
+R_Avg, G_Avg, B_Avg = None, None, None
 frames_processed = 0
 
 # while loop to read each frame one by one and calculating the running average 
@@ -36,8 +37,12 @@ while True:
 
 
 print('Total No. of frames processed: ', frames_processed)
-avg = cv2.merge([B_Avg, G_Avg, R_Avg]).astype("uint8")
-cv2.imwrite('output.jpg', avg)
+avg_result = cv2.merge([B_Avg, G_Avg, R_Avg]).astype("uint8")
+cv2.imwrite('output.jpg', avg_result)
 
 # releasing the file pointer
 cap.release()
+
+# References
+# Long exposure with OpenCV and Python (https://www.pyimagesearch.com/2017/08/14/long-exposure-with-opencv-and-python/#:~:text=The%20averaging%20computation%20is%20quite,this%20is%20a%20fresh%20frame)
+# OpenCV Python Documentaion (https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)

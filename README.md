@@ -13,7 +13,8 @@
 I have taken the total number of **frames_processed_so_far** times the **so_far_channel_average**, adding the respective channel of the current frame, and then dividing the result by the total number of **frames_processed_so_far + 1(for current_frame)**. And storing the final result in the respective RGB channel average arrays.
 
 ## References
-[Long exposure with OpenCV and Python](https://www.pyimagesearch.com/2017/08/14/long-exposure-with-opencv-and-python/#:~:text=The%20averaging%20computation%20is%20quite,this%20is%20a%20fresh%20frame).
+- [Long exposure with OpenCV and Python](https://www.pyimagesearch.com/2017/08/14/long-exposure-with-opencv-and-python/#:~:text=The%20averaging%20computation%20is%20quite,this%20is%20a%20fresh%20frame)
+- [OpenCV Python Documentaion](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
 
 
 # Output of the task
