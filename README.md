@@ -1,7 +1,7 @@
 # Task write-up
 
 ## Requirements
-- opencv module
+- opencv module (*To install use: pip install opencv-python*)
 
 ## Steps to proceed
 - First load the video [cut.mp4](https://github.com/anuragjain0610/synergy_task/blob/master/cut.mp4) into VideoCapture() funcion of openCV module.
@@ -9,7 +9,7 @@
 - Then take average of the respective channels of each frame individually using the concept of **Running Averages**. 
 - Finally, merge the three different averaged channels of all the frames into a single image [output.jpg](https://github.com/anuragjain0610/synergy_task/blob/master/output.jpg).
 
-## Running Average Technique
+## Explanation of Running Averages:
 I have taken the total number of **frames_processed_so_far** times the **so_far_channel_average**, adding the respective channel of the current frame, and then dividing the result by the total number of **frames_processed_so_far + 1(for current_frame)**. And storing the final result in the respective RGB channel average arrays.
 
 ## References
@@ -18,3 +18,5 @@ I have taken the total number of **frames_processed_so_far** times the **so_far_
 
 # Output of the task
 <img src='output.jpg'>
+
+## Result: As required,a clear road without any vehicle.
