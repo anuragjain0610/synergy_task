@@ -9,6 +9,16 @@
 - Then take average of the respective channels of each frame individually using the concept of **Running Averages**. 
 - Finally, merge the three different averaged channels of all the frames into a single image [output.jpg](https://github.com/anuragjain0610/synergy_task/blob/master/output.jpg).
 
+## Sample Video Properties:
+- Video duration: 15s
+- No. of frames in video: 386 
+- Calculated frame rate(fps): 25.67fps
+- Frame width: 1920p
+- Frame height: 1080p
+- Video Type: MPEG-4
+- Video Size: 9.8 MB
+- Video Codec: H.264  
+
 ## Explanation of Running Averages:
 I have taken the total number of **frames_processed_so_far** times the **so_far_channel_average**, adding the respective channel of the current frame, and then dividing the result by the total number of **frames_processed_so_far + 1(for current_frame)**. And storing the final result in the respective RGB channel average arrays.
 
